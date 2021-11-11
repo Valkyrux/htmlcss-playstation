@@ -19,3 +19,7 @@ body {
     height: fit-content;
     border: 0 solid transparent;
 }
+
+.ms_lens {
+    width: 30px;
+}
