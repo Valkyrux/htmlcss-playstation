@@ -2,6 +2,10 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+header {
+    z-index: 1;
+}
+
 .ms_header-top {
     background-color: black;
     text-align: right;
@@ -21,5 +25,31 @@ body {
 }
 
 .ms_lens {
-    width: 30px;
+    width: 40px;
+}
+
+.ms_jumbo {
+    background-image: url(../img/jumbo-bg.png);
+    background-position: top;
+    color: white;
+}
+
+.ms_jumbo-height {
+    height: 600px;
+}
+
+.ms_returnal_logo {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ms_returnal_logo img{
+    width: 50%;
+}
+
+@media screen and (min-width:1140px) {
+    .ms_returnal_logo img{
+        width: 20%;
+    }
 }
