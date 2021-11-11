@@ -1,0 +1,21 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.ms_header-top {
+    background-color: black;
+    text-align: right;
+    line-height: 0;
+}
+
+.ms_header-top img {
+    width: 60px;
+    margin: 5px 1%;
+    object-fit: contain;
+}
+
+.ms_dropdown {
+    width: 100%;
+    height: fit-content;
+    border: 0 solid transparent;
+}
