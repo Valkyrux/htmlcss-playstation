@@ -54,18 +54,32 @@ header {
     }
 }
 
-.ms_thumb_container {
+.ms_highlights .ms_thumb {
     padding: 2px;
     border: 2px solid transparent;
     border-radius: 13px;
     overflow: hidden;
 }
 
-.ms_thumb_container.ms_active {
+.ms_highlights .ms_thumb.ms_active {
     border: 2px solid blue;
 }
 
-.ms_thumb_container img {
+.ms_highlights .ms_thumb img {
     border-radius: 9px;
     width: 100%;
+}
+
+.ms_ps5_thumb img {
+    width: 100%;
+    filter: opacity(0.6);
+}
+
+.ms_ps5_thumb img:hover,
+.ms_ps5_thumb.ms_active img {
+    filter: opacity(1);
+}
+
+.ms_ps5_thumb.ms_active {
+    border-bottom: 2px solid blue;
 }
