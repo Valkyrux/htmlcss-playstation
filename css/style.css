@@ -6,6 +6,15 @@ header {
     z-index: 1;
 }
 
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
 .ms_header-top {
     background-color: black;
     text-align: right;
@@ -24,8 +33,37 @@ header {
     border: 0 solid transparent;
 }
 
-.ms_lens {
-    width: 40px;
+.navbar-nav .nav-link.ms_nav_link {
+    color: black;
+}
+
+.navbar-nav .nav-link.ms_nav_link:hover, 
+.navbar-nav .nav-link.ms_nav_link:active, 
+.navbar-nav .nav-link.ms_nav_link:focus, 
+.navbar-nav .nav-link.show.ms_nav_link {
+    color: #0d6efd;
+}
+/* toggle */
+.ms_toggle {
+    font-size: 0.7rem;
+    vertical-align: middle;
+}
+
+.ms_toggle i {
+    transition: 0.2s;
+}
+
+.navbar-nav .nav-link.ms_nav_link.show i {
+    transform: rotate(180deg);
+}
+
+/* search border my_style */
+
+@media screen and (min-width:992px) {
+    .border {
+        border: 0px solid transparent!important;
+        background-color: transparent!important;
+    }
 }
 
 .ms_jumbo {
@@ -62,16 +100,23 @@ header {
 }
 
 .ms_highlights .ms_thumb.ms_active {
-    border: 2px solid blue;
+    border: 2px solid #0d6efd;
 }
 
-.ms_highlights .ms_thumb img {
+.ms_thumb img {
     border-radius: 9px;
-    width: 100%;
+}
+
+.ms_uppercase {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.ms_ps5_thumb {
+    height: 100%;
 }
 
 .ms_ps5_thumb img {
-    width: 100%;
     filter: opacity(0.6);
 }
 
@@ -81,5 +126,30 @@ header {
 }
 
 .ms_ps5_thumb.ms_active {
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #0d6efd;
+}
+
+.ms_thumb_text {
+    padding-top: 20px;
+    font-size: 1rem;
+}
+
+.ms_jumbo.ms_banner {
+    background-position: center;
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+.ms_ittakestwo_logo {
+    width: 60%;
+}
+
+@media screen and (min-width: 992px) {
+    .ms_ittakestwo_logo {
+        width: 30%;
+    }
+
+}
+
+.ms_gallery_thumb img {
+    border-radius: 15px;
 }
