@@ -199,7 +199,7 @@ ul {
 .ms_gallery_thumb img {
     border-radius: 15px;
 }
-
+/* R */
 .ms_R {
     font-size: 0.3em;
     font-weight: 700;
@@ -212,4 +212,19 @@ ul {
     align-items: center;
     position: relative;
     top: -1.3em;
+}
+/* ps plus */
+.ms_ps_plus {
+    background-color:  #bebcbb;
+}
+
+.ms_ps_now {
+    background-color: #161c3b;
+}
+/* extending bootstrap row-col */
+@media screen and (min-width: 992px) {
+    .row-cols-lg-8>* {
+        flex: 0 0 auto;
+        width: calc(100% / 8);
+    }
 }
