@@ -14,7 +14,7 @@ ul {
     list-style-type: none;
     margin-bottom: 0;
 }
-
+/* header-top */
 .ms_header-top {
     background-color: black;
     text-align: right;
@@ -22,15 +22,15 @@ ul {
 }
 
 .ms_header-top img {
-    width: 60px;
-    margin: 5px 1%;
+    width: 70px;
+    margin: 7px 1%;
     object-fit: contain;
 }
-
+/* drop_down */
 .ms_dropdown {
     width: 100%;
     height: fit-content;
-    border: 0 solid transparent;
+    border: 0 solid white;
 }
 
 .navbar-nav .nav-link.ms_nav_link {
@@ -50,22 +50,23 @@ ul {
 }
 
 .ms_toggle i {
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .navbar-nav .nav-link.ms_nav_link.show i {
     transform: rotate(180deg);
 }
-
+/* ms_btn_dark */
+.ms_btn_dark:hover {
+    opacity: 0.7;
+}
 /* search border my_style */
-
 @media screen and (min-width:992px) {
     .border {
         border: 0px solid transparent!important;
-        background-color: transparent!important;
     }
 }
-
+/* jumbo */
 .ms_jumbo {
     background-image: url(../img/jumbo-bg.png);
     background-position: top;
@@ -91,16 +92,21 @@ ul {
         width: 30%;
     }
 }
-
+/* highlights */
 .ms_highlights .ms_thumb {
     padding: 2px;
     border: 2px solid transparent;
     border-radius: 13px;
     overflow: hidden;
+    transition: 0.2s;
 }
 
 .ms_highlights .ms_thumb.ms_active {
     border: 2px solid #0d6efd;
+}
+
+.ms_highlights .ms_thumb:hover {
+    transform: translateY(-5px);
 }
 
 .ms_thumb img {
