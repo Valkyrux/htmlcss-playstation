@@ -228,3 +228,17 @@ ul {
         width: calc(100% / 8);
     }
 }
+/* footer-bottom */
+.ms_footer {
+    background-color: #00439c;
+}
+
+.ms_lang img {
+    width: 12px;
+    vertical-align: baseline;
+    margin: 0 4px;
+}
+
+.ms_sie {
+    width: 150px
+}
